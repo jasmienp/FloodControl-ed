@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://vbq3t16u4v81"]
+
+[ext_resource type="Script" uid="uid://d133bxa4kd800" path="res://scripts/level_2.gd" id="1_eqxsl"]
+[ext_resource type="Script" uid="uid://bdycoo361kbwh" path="res://scripts/character_body_2d.gd" id="2_eqxsl"]
+[ext_resource type="Texture2D" uid="uid://crrfo08tlt5kr" path="res://assets/icon.svg" id="3_b4j7a"]
+[ext_resource type="FontFile" uid="uid://cye4lbqelomt3" path="res://assets/ROHH  Akwe Pro Black.otf" id="4_b4j7a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xbjy"]
+size = Vector2(123, 120)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4nkto"]
+radius = 151.01324
+
+[node name="Level2" type="Node2D"]
+script = ExtResource("1_eqxsl")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_eqxsl")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(582, 335)
+texture = ExtResource("3_b4j7a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(583, 334)
+shape = SubResource("RectangleShape2D_5xbjy")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1066, 550)
+shape = SubResource("CircleShape2D_4nkto")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 120.0
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_b4j7a")
+theme_override_font_sizes/font_size = 24
+text = "Level 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
