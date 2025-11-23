@@ -3,6 +3,7 @@ extends StaticBody2D
 var dragging := false
 var drag_offset := Vector2.ZERO
 const GRID_SIZE := Vector2(8, 8)  # Adjust to your grid cell size
+const GRID_SIZE := Vector2(32, 32)  # Adjust to your grid cell size
 
 func _ready():
 	input_pickable = true
