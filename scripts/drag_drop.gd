@@ -2,7 +2,7 @@ extends StaticBody2D
 
 var dragging := false
 var drag_offset := Vector2.ZERO
-const GRID_SIZE := Vector2(32, 32)
+const GRID_SIZE := Vector2(16, 16)
 
 # Store the last valid position so we can revert if overlap
 var last_valid_position := Vector2.ZERO
@@ -26,10 +26,9 @@ func _input_event(viewport, event, shape_idx):
 			var snapped = global_position.snapped(GRID_SIZE)
 			
 			# Check if cell is occupied
-			if Occupancy.is_cell_free(snapped):
+			if not is_colliding_at(snapped):
 				global_position = snapped
 				last_valid_position = snapped
-				Occupancy.occupy(snapped, self)
 			else:
 				# Revert to last valid spot
 				global_position = last_valid_position
@@ -37,3 +36,16 @@ func _input_event(viewport, event, shape_idx):
 func _process(delta):
 	if dragging:
 		global_position = (get_global_mouse_position() + drag_offset).snapped(GRID_SIZE)
+
+func is_colliding_at(position: Vector2) -> bool:
+	var space_state = get_world_2d().direct_space_state
+	var params = PhysicsPointQueryParameters2D.new()
+	params.position = position
+	params.collide_with_areas = true
+	params.collide_with_bodies = true
+	
+	var result = space_state.intersect_point(params, 1)
+	for hit in result:
+		if hit.collider != self:
+			return true
+	return false
