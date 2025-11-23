@@ -2,11 +2,15 @@ extends StaticBody2D
 
 var dragging := false
 var drag_offset := Vector2.ZERO
-const GRID_SIZE := Vector2(32, 32)  # Adjust to your grid cell size
+const GRID_SIZE := Vector2(32, 32)
+
+# Store the last valid position so we can revert if overlap
+var last_valid_position := Vector2.ZERO
 
 func _ready():
 	input_pickable = true
 	set_process(true)
+	last_valid_position = global_position
 
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -19,8 +23,16 @@ func _input_event(viewport, event, shape_idx):
 			# Stop drag
 			dragging = false
 			z_index = 0
-			# Snap to grid when released
-			global_position = global_position.snapped(GRID_SIZE)
+			var snapped = global_position.snapped(GRID_SIZE)
+			
+			# Check if cell is occupied
+			if Occupancy.is_cell_free(snapped):
+				global_position = snapped
+				last_valid_position = snapped
+				Occupancy.occupy(snapped, self)
+			else:
+				# Revert to last valid spot
+				global_position = last_valid_position
 
 func _process(delta):
 	if dragging:
