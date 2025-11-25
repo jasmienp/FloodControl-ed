@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=4 uid="uid://ck0q0mxmj2s4a"]
+[gd_scene load_steps=60 format=4 uid="uid://ck0q0mxmj2s4a"]
 
 [ext_resource type="Script" uid="uid://cgxwpp7ppfda1" path="res://scripts/level_1.gd" id="1_bswci"]
 [ext_resource type="Texture2D" uid="uid://f40x27hkxjnu" path="res://assets/Tilesets/Hills.png" id="2_4nkto"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://bb3tab2g8jncq" path="res://assets/Objects/Brown Crates 2.png" id="19_wbtxt"]
 [ext_resource type="Texture2D" uid="uid://cjkeyt2jkqe2a" path="res://assets/Characters/Egg_And_Nest.png" id="20_tdlki"]
 [ext_resource type="Script" uid="uid://dl0rp383mebvf" path="res://scripts/solved_area.gd" id="24_x2fux"]
+[ext_resource type="Script" uid="uid://tawy1i6ymv65" path="res://scripts/camera.gd" id="26_s7g0b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_almkw"]
 texture = ExtResource("2_d5akn")
@@ -1038,6 +1039,7 @@ size = Vector2(16, 16)
 size = Vector2(16, 16)
 
 [node name="Level1" type="Node2D"]
+texture_filter = 1
 script = ExtResource("1_bswci")
 
 [node name="Water" type="TileMapLayer" parent="."]
@@ -1056,15 +1058,15 @@ tile_set = SubResource("TileSet_pa8r4")
 tile_map_data = PackedByteArray("AAAaABAACwAAAAAAAAAgABMACwAAAAAAAAAeABEACwABAAAAAAAhAA8ACwABAAAAAAAbABMACwAAAAEAAAAeABMACwADAAEAAAAcAA4ACwADAAEAAABFAAcADAAAAAAAAABFAAgADAAAAAEAAABGAAcADAABAAAAAABGAAgADAABAAEAAABCAAsADAACAAAAAABCAAwADAACAAEAAABDAAsADAADAAAAAABDAAwADAADAAEAAABGAA0ADAAEAAAAAABGAA4ADAAEAAEAAABHAA0ADAAFAAAAAABHAA4ADAAFAAEAAABAAAgADAAAAAAAAABAAAkADAAAAAEAAABBAAgADAABAAAAAABBAAkADAABAAEAAABHAAsACgAEAAcAAAA3AAwACgAKAAQAAAAhABIACgABAAcAAAA=")
 tile_set = SubResource("TileSet_pa8r4")
 
-[node name="house (wall)" type="TileMapLayer" parent="."]
+[node name="HouseWall" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAApABEAAAAAAAEAAAApABIAAQAAAAIAAAApABMAAQAAAAIAAAApABQAAQAAAAIAAAApABUAAQAAAAMAAAAqABEAAQABAAEAAAAqABIAAQABAAIAAAAqABMAAQABAAIAAAAqABQAAQABAAIAAAAqABUAAAADAAIAAAArABEAAQABAAEAAAArABIAAQABAAIAAAArABMAAQABAAIAAAArABQAAQABAAIAAAArABUAAQABAAMAAAAsABEAAQABAAEAAAAsABIAAQABAAIAAAAsABMAAQABAAIAAAAsABQAAQABAAIAAAAsABUAAQADAAEAAAAtABEAAQABAAEAAAAtABIAAQABAAIAAAAtABMAAQABAAIAAAAtABQAAQABAAIAAAAtABUAAQABAAMAAAAuABEAAQACAAEAAAAuABQAAAADAAAAAAAuABUAAQACAAMAAAApAA8AAAAAAAEAAAApABAAAAAAAAEAAAApAA4AAAAAAAAAAAAqAA4AAQABAAAAAAAsAA4AAAABAAAAAAAvAA4AAAABAAAAAAAwAA4AAQABAAAAAAAxAA4AAQABAAEAAAAyAA4AAAACAAAAAAAyAA8AAAACAAEAAAAyABAAAAACAAEAAAAyABEAAQACAAIAAAAyABIAAQACAAIAAAAyABMAAAACAAEAAAAuABIAAAADAAEAAAAvABQAAAABAAAAAAAwABQAAAABAAAAAAAxABQAAAABAAAAAAAyABQAAAACAAIAAAAvABIAAAABAAAAAAAwABIAAAABAAIAAAAxABIAAQADAAMAAAArAA4AAQABAAEAAAAtAA4AAAABAAAAAAAuAA4AAQABAAEAAAAxAA8ABAAEAAIAAAA=")
 tile_set = SubResource("TileSet_7gny6")
 
-[node name="house (deco)" type="TileMapLayer" parent="house (wall)"]
+[node name="HouseDeco" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAZAAwABQAAAAAAAAAZAA0ABQAAAAEAAAAZAA4ABQAAAAIAAAAaAAwABQABAAAAAAAaAA0ABQABAAEAAAAaAA4ABQABAAIAAAAbAAwABQACAAAAAAAbAA0ABQACAAEAAAAbAA4ABQACAAIAAAAcAAwABQAAAAAAAAAcAA0ABQAAAAEAAAAcAA4ABQAAAAIAAAAdAAwABQABAAAAAAAdAA0ABQABAAEAAAAdAA4ABQABAAIAAAAeAAwABQACAAAAAAAeAA0ABQACAAEAAAAeAA4ABQACAAIAAAAfAAwABQAAAAAAAAAfAA0ABQAAAAEAAAAfAA4ABQAAAAIAAAAgAAwABQABAAAAAAAgAA0ABQABAAEAAAAgAA4ABQABAAIAAAAhAAwABQACAAAAAAAhAA0ABQACAAEAAAAhAA4ABQACAAIAAAAvAA4AAwADAAIAAAArABMAAwADAAMAAAAqABMAAwAEAAMAAAArABIAAwAEAAMAAAAsABMAAwAEAAMAAAAvABMAAwAHAAUAAAAwABMAAwAIAAUAAAAxAA8AAwADAAMAAAArABQAAwAEAAMAAAAwAA8AAwAEAAIAAAArAA8AAwADAAMAAAAsAA4AAwACAAEAAAAsAA8AAwACAAIAAAA=")
 tile_set = SubResource("TileSet_6dial")
 
-[node name="house (deco)2" type="TileMapLayer" parent="house (wall)"]
+[node name="HouseDeco2" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAvABIAAwABAAAAAAArABMAAwAFAAAAAAAtAA4AAwAAAAAAAAArAA8AAwADAAEAAAAtABIABgAAAAEAAAAxAA8ABgAEAAIAAAAuABEABwAAAAAAAAAfABAABwAAAAAAAAAbABIABwABAAAAAAAgABQABwACAAAAAAAZAA8ABwACAAAAAAAcABIABwADAAAAAAAfAA8ABwADAAAAAAAZABQABwABAAAAAAA=")
 tile_set = SubResource("TileSet_6dial")
 
@@ -1296,6 +1298,12 @@ theme_override_font_sizes/font_size = 42
 text = "3:30"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(575, 322)
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+script = ExtResource("26_s7g0b")
 
 [connection signal="body_entered" from="SolvedArea" to="SolvedArea" method="_on_body_entered"]
 [connection signal="body_exited" from="SolvedArea" to="SolvedArea" method="_on_body_exited"]

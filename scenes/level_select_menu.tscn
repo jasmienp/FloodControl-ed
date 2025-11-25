@@ -10,6 +10,7 @@ texture = ExtResource("2_jq82j")
 modulate_color = Color(0.585062, 0.585062, 0.58506197, 1)
 
 [node name="LevelSelectMenu" type="Node2D"]
+texture_filter = 1
 script = ExtResource("1_isecu")
 
 [node name="Panel" type="Panel" parent="."]
