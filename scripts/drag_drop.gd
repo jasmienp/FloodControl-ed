@@ -3,10 +3,18 @@ extends StaticBody2D
 var dragging := false
 var drag_offset := Vector2.ZERO
 const GRID_SIZE := Vector2(16, 16)
-
-# Store the last valid position so we can revert if overlap
 var last_valid_position := Vector2.ZERO
 static var occupied_cells := {}
+
+@onready var blocking_tilemaps := [
+	get_parent().get_node("Landscape"),
+	get_parent().get_node("Animals"),
+	get_parent().get_node("crates"),
+	get_parent().get_node("HouseWall"),
+	get_parent().get_node("HouseDeco"),
+	get_parent().get_node("HouseDeco2")
+]
+
 
 func _ready():
 	input_pickable = true
@@ -51,4 +59,13 @@ func _process(delta):
 		modulate = Color(1, 1, 1)
 
 func is_colliding_at(position: Vector2) -> bool:
-	return occupied_cells.has(position)
+	if occupied_cells.has(position):
+		return true
+
+	for layer in blocking_tilemaps:
+		var map_cell = layer.local_to_map(position)
+		var source_id = layer.get_cell_source_id(map_cell)
+		if source_id != -1: 
+			return true
+
+	return false
