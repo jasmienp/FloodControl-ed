@@ -1,12 +1,12 @@
 [gd_scene load_steps=18 format=4 uid="uid://dugvsi57172yw"]
 
-[ext_resource type="Script" uid="uid://dvrp8tnj18c3b" path="res://letter.gd" id="1_45yc0"]
-[ext_resource type="Texture2D" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="1_f7sb6"]
-[ext_resource type="Texture2D" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png" id="2_c0le5"]
-[ext_resource type="Texture2D" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="3_pvyqo"]
-[ext_resource type="Texture2D" path="res://Sprout Lands - Sprites - Basic pack/Objects/Basic Grass Biom things 1.png" id="4_wx28u"]
-[ext_resource type="Texture2D" path="res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Spritesheet.png" id="5_x2umu"]
-[ext_resource type="Texture2D" path="res://Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png" id="6_0eqrh"]
+[ext_resource type="Script" uid="uid://dvrp8tnj18c3b" path="res://scripts/letter.gd" id="1_45yc0"]
+[ext_resource type="Texture2D" uid="uid://drxnqc10vujqr" path="res://assets/Tilesets/Water.png" id="1_f7sb6"]
+[ext_resource type="Texture2D" uid="uid://f40x27hkxjnu" path="res://assets/Tilesets/Hills.png" id="2_c0le5"]
+[ext_resource type="Texture2D" uid="uid://cos1w6olkddai" path="res://assets/Tilesets/Grass.png" id="3_pvyqo"]
+[ext_resource type="Texture2D" uid="uid://y50yagnhwa7h" path="res://assets/Objects/Basic Grass Biom things 1.png" id="4_wx28u"]
+[ext_resource type="Texture2D" uid="uid://kc1vmyauuncj" path="res://assets/Characters/Basic Charakter Spritesheet.png" id="5_x2umu"]
+[ext_resource type="Texture2D" uid="uid://6robinsfcae0" path="res://assets/Characters/Basic Charakter Actions.png" id="6_0eqrh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_utang"]
 texture = ExtResource("1_f7sb6")
