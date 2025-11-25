@@ -47,6 +47,10 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	get_tree().change_scene_to_file(\"res://scenes/level_select_menu.tscn\")
 "
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hy71f"]
@@ -771,3 +775,5 @@ position = Vector2(636.1875, 304)
 scale = Vector2(0.38495803, 0.4277778)
 sprite_frames = SubResource("SpriteFrames_hvep3")
 animation = &"lets_go"
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
