@@ -7,7 +7,7 @@ func _ready() -> void:
 
 
 func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/level_select_menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/res://scenes/EPILOGUE.tscn")
 
 func _on_settings_pressed() -> void:
 	print("Settings Pressed")
