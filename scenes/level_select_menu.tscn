@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://cn8ea46qiomwv"]
+[gd_scene load_steps=7 format=3 uid="uid://cn8ea46qiomwv"]
 
-[ext_resource type="Script" uid="uid://ci2wbx45u1jgu" path="res://scripts/level_select_menu.gd" id="1_isecu"]
+[ext_resource type="Script" uid="uid://ci2wbx45u1jgu" path="res://scripts/Menu/level_select_menu.gd" id="1_isecu"]
 [ext_resource type="Texture2D" uid="uid://tt50we0pt282" path="res://assets/2159bc01642656365f703e775f0430ef.jpg" id="2_jq82j"]
 [ext_resource type="FontFile" uid="uid://cye4lbqelomt3" path="res://assets/ROHH  Akwe Pro Black.otf" id="3_5wmf4"]
+[ext_resource type="Texture2D" uid="uid://hi58l835l1s4" path="res://assets/check.png" id="4_jq82j"]
 [ext_resource type="Texture2D" uid="uid://c7v83ljn038m3" path="res://assets/lock.jpg" id="4_or5k1"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ns6ff"]
@@ -14,6 +15,7 @@ texture_filter = 1
 script = ExtResource("1_isecu")
 
 [node name="Panel" type="Panel" parent="."]
+texture_filter = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -25,6 +27,7 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_ns6ff")
 
 [node name="Label" type="Label" parent="."]
+texture_filter = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
@@ -43,6 +46,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label" type="Label" parent="Label"]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -62,6 +66,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="Label"]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -81,6 +86,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label3" type="Label" parent="Label"]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -100,13 +106,21 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="lvl1_completed" type="ColorRect" parent="."]
+texture_filter = 1
 offset_left = 294.0
 offset_top = 287.0
 offset_right = 442.0
 offset_bottom = 435.0
 color = Color(0, 0.6411751, 0.26073384, 1)
 
+[node name="Sprite2D" type="Sprite2D" parent="lvl1_completed"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(74, 74)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("4_jq82j")
+
 [node name="lvl2_completed" type="ColorRect" parent="."]
+texture_filter = 1
 offset_left = 514.0
 offset_top = 287.0
 offset_right = 662.0
@@ -114,6 +128,7 @@ offset_bottom = 435.0
 color = Color(0, 0.6411751, 0.26073384, 1)
 
 [node name="lvl3_completed" type="ColorRect" parent="."]
+texture_filter = 1
 offset_left = 734.0
 offset_top = 287.0
 offset_right = 882.0
@@ -121,6 +136,7 @@ offset_bottom = 435.0
 color = Color(0, 0.6411751, 0.26073384, 1)
 
 [node name="lvl1_locked" type="ColorRect" parent="."]
+texture_filter = 1
 offset_left = 294.0
 offset_top = 287.0
 offset_right = 442.0
@@ -128,6 +144,7 @@ offset_bottom = 435.0
 color = Color(0.9938831, 0.032714568, 1.1551381e-06, 1)
 
 [node name="lvl2_locked" type="ColorRect" parent="."]
+texture_filter = 1
 offset_left = 514.0
 offset_top = 287.0
 offset_right = 662.0
@@ -135,6 +152,7 @@ offset_bottom = 435.0
 color = Color(0.99215686, 0.03137255, 0, 1)
 
 [node name="lvl3_locked" type="ColorRect" parent="."]
+texture_filter = 1
 offset_left = 734.0
 offset_top = 287.0
 offset_right = 882.0
@@ -143,6 +161,7 @@ color = Color(0.99215686, 0.03137255, 0, 1)
 
 [node name="Button" type="Button" parent="."]
 unique_name_in_owner = true
+texture_filter = 1
 offset_left = 292.0
 offset_top = 285.0
 offset_right = 444.0
@@ -150,6 +169,7 @@ offset_bottom = 437.0
 
 [node name="Button2" type="Button" parent="."]
 unique_name_in_owner = true
+texture_filter = 1
 offset_left = 512.0
 offset_top = 285.0
 offset_right = 664.0
@@ -157,17 +177,20 @@ offset_bottom = 437.0
 
 [node name="Button3" type="Button" parent="."]
 unique_name_in_owner = true
+texture_filter = 1
 offset_left = 732.0
 offset_top = 285.0
 offset_right = 884.0
 offset_bottom = 437.0
 
 [node name="Lock1" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(588, 361)
 scale = Vector2(0.19765615, 0.19765615)
 texture = ExtResource("4_or5k1")
 
 [node name="Lock2" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(808, 361)
 scale = Vector2(0.19765615, 0.19765615)
 texture = ExtResource("4_or5k1")
