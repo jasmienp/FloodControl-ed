@@ -17,7 +17,11 @@ config/icon="res://assets/icon.svg"
 
 [autoload]
 
-LevelCore="*res://scripts/level_core.gd"
+LevelCore="*res://scripts/Menu/level_core.gd"
+
+[display]
+
+window/stretch/mode="viewport"
 
 [input]
 
