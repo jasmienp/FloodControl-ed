@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=4 uid="uid://m33s8bgvbhfr"]
+[gd_scene load_steps=55 format=4 uid="uid://m33s8bgvbhfr"]
 
 [ext_resource type="Texture2D" uid="uid://drxnqc10vujqr" path="res://assets/Tilesets/Water.png" id="1_tjonx"]
 [ext_resource type="Texture2D" uid="uid://f40x27hkxjnu" path="res://assets/Tilesets/Hills.png" id="2_6og5i"]
@@ -6,9 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://y50yagnhwa7h" path="res://assets/Objects/Basic Grass Biom things 1.png" id="4_xjume"]
 [ext_resource type="Texture2D" uid="uid://kc1vmyauuncj" path="res://assets/Characters/Basic Charakter Spritesheet.png" id="5_mxgu0"]
 [ext_resource type="Texture2D" uid="uid://6robinsfcae0" path="res://assets/Characters/Basic Charakter Actions.png" id="6_gp2ni"]
-[ext_resource type="Script" path="res://scripts/player.gd" id="7_yy8hr"]
-[ext_resource type="Script" path="res://scripts/sprite_2d.gd" id="8_nollm"]
-[ext_resource type="Script" path="res://scripts/animation_player.gd" id="9_21cbn"]
+[ext_resource type="Script" uid="uid://80kl10p8d3vr" path="res://scripts/player.gd" id="7_yy8hr"]
+[ext_resource type="Script" uid="uid://beq7d2f4hlba1" path="res://scripts/sprite_2d.gd" id="8_nollm"]
+[ext_resource type="Script" uid="uid://cxwldrhfsres7" path="res://scripts/animation_player.gd" id="9_21cbn"]
+[ext_resource type="Texture2D" uid="uid://bcoq5fj8q3ep2" path="res://assets/MAIL.png" id="10_bk7b3"]
 [ext_resource type="Texture2D" uid="uid://ddr0fsmy7my7x" path="res://assets/TB2/2cd6a6e8-31c3-4dbe-b9f5-9cd475042818-0.png" id="10_cepsi"]
 [ext_resource type="Texture2D" uid="uid://biwyo23xx605p" path="res://assets/TB2/2cd6a6e8-31c3-4dbe-b9f5-9cd475042818-1.png" id="11_s4dx4"]
 [ext_resource type="Texture2D" uid="uid://ddv8s30k20bow" path="res://assets/TB2/2cd6a6e8-31c3-4dbe-b9f5-9cd475042818-2.png" id="12_tv8ls"]
@@ -787,12 +788,13 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="Button" type="Button" parent="Mail Button"]
+[node name="Button" type="TextureButton" parent="Mail Button"]
 layout_mode = 0
-offset_left = 592.0
-offset_top = 368.0
-offset_right = 616.0
-offset_bottom = 384.0
+offset_left = 555.0
+offset_top = 334.0
+offset_right = 655.0
+offset_bottom = 434.0
+texture_normal = ExtResource("10_bk7b3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
