@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FINAL ATTEMPT"
-run/main_scene="uid://c5j30qojyimsa"
+run/main_scene="uid://b6ts61yr6qat"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://assets/icon.svg"
 
