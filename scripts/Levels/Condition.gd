@@ -29,5 +29,11 @@ func check_crate_position(cell: Vector2i, crate: Node):
 
 
 func level_finished():
-	LevelCore.lvl1_completed = true
+	if LevelCore.current_level == "lvl1":
+		LevelCore.lvl1_completed = true
+	elif LevelCore.current_level == "lvl2":
+		LevelCore.lvl2_completed = true
+	else:
+		LevelCore.lvl3_completed = true
+
 	get_tree().change_scene_to_file("res://scenes/level_select_menu.tscn")

@@ -12,6 +12,9 @@ var Dminutes = 0
 @onready var flood_fail = $FloodFail
 
 func _ready():
+	var lvl = LevelCore.current_level
+	Dminutes = LevelCore.level_times[lvl]["minutes"]
+	Dseconds = LevelCore.level_times[lvl]["seconds"]
 	reset_timer()
 	timer.start()
 	timer.timeout.connect(_on_timer_timeout)
@@ -31,7 +34,8 @@ func _on_timer_timeout() -> void:
 	if minutes == 0 and seconds == 0:
 		timer.stop()
 		timer_label.text = "00:00"
-
+		
+		MovableCrates.crates_locked = true
 		await warning._start_flicker()
 		flood_fail.visible = true
 		await $FloodFail.start_flood_sequence_with_delay()

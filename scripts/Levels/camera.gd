@@ -1,6 +1,9 @@
-extends Node2D
+extends Camera2D
 
 func _ready():
-	var cam = Camera2D.new()
-	cam.make_current()  
-	add_child(cam)
+	if enabled and is_inside_tree():
+		make_current()
+	else:
+		await get_tree().process_frame
+		if enabled and is_inside_tree():
+			make_current()

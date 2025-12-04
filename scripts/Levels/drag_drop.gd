@@ -1,9 +1,11 @@
 extends StaticBody2D
+class_name MovableCrates
 
 var dragging := false
 var drag_offset := Vector2.ZERO
 var last_valid_position := Vector2.ZERO
 static var occupied_cells := {}
+static var crates_locked := false
 
 var tile_size: Vector2
 var half_tile: Vector2
@@ -33,6 +35,9 @@ func _ready():
 	occupied_cells[global_position.snapped(tile_size)] = true
 
 func _input_event(viewport, event, shape_idx):
+	if crates_locked:
+		return
+		
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		if event.pressed:
 			dragging = true
