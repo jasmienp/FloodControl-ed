@@ -127,6 +127,12 @@ offset_right = 662.0
 offset_bottom = 435.0
 color = Color(0, 0.6411751, 0.26073384, 1)
 
+[node name="Sprite2D" type="Sprite2D" parent="lvl2_completed"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(74, 74)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("4_jq82j")
+
 [node name="lvl3_completed" type="ColorRect" parent="."]
 texture_filter = 1
 offset_left = 734.0
