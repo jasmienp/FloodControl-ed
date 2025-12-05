@@ -6,6 +6,7 @@ var filled_cells := {}
 var all_filled: bool = false
 
 func _ready():
+	MovableCrates.occupied_cells.clear()
 	target_cells = target_map.get_used_cells()
 
 func check_crate_position(cell: Vector2i, crate: Node):

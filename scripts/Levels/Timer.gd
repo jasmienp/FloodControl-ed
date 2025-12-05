@@ -12,6 +12,7 @@ var Dminutes = 0
 @onready var flood_fail = $FloodFail
 
 func _ready():
+	MovableCrates.occupied_cells.clear()
 	var lvl = LevelCore.current_level
 	Dminutes = LevelCore.level_times[lvl]["minutes"]
 	Dseconds = LevelCore.level_times[lvl]["seconds"]
