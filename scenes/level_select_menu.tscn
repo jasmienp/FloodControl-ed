@@ -1,30 +1,178 @@
-[gd_scene load_steps=7 format=3 uid="uid://cn8ea46qiomwv"]
+[gd_scene load_steps=28 format=3 uid="uid://cn8ea46qiomwv"]
 
 [ext_resource type="Script" uid="uid://ci2wbx45u1jgu" path="res://scripts/Menu/level_select_menu.gd" id="1_isecu"]
-[ext_resource type="Texture2D" uid="uid://tt50we0pt282" path="res://assets/2159bc01642656365f703e775f0430ef.jpg" id="2_jq82j"]
+[ext_resource type="Texture2D" uid="uid://brsg7o0wa4gaw" path="res://assets/Main Menu/Background/1.png" id="2_cy8yo"]
 [ext_resource type="FontFile" uid="uid://cye4lbqelomt3" path="res://assets/ROHH  Akwe Pro Black.otf" id="3_5wmf4"]
-[ext_resource type="Texture2D" uid="uid://hi58l835l1s4" path="res://assets/check.png" id="4_jq82j"]
-[ext_resource type="Texture2D" uid="uid://c7v83ljn038m3" path="res://assets/lock.jpg" id="4_or5k1"]
+[ext_resource type="Texture2D" uid="uid://vc6pe45vqeqm" path="res://assets/Main Menu/Background/2.png" id="3_bbj4t"]
+[ext_resource type="Texture2D" uid="uid://c3f1gccb37hus" path="res://assets/check.png" id="4_jq82j"]
+[ext_resource type="Texture2D" uid="uid://bbd1hn1o1d3sb" path="res://assets/Main Menu/Background/3.png" id="4_pbrp0"]
+[ext_resource type="Texture2D" uid="uid://f21ispdk7vnh" path="res://assets/Main Menu/Background/4.png" id="5_a4lpp"]
+[ext_resource type="Texture2D" uid="uid://bwiea671ntk4s" path="res://assets/Main Menu/Background/5.png" id="6_bj1le"]
+[ext_resource type="Texture2D" uid="uid://dmybktkpm1ddy" path="res://assets/Main Menu/Background/6.png" id="7_5x3ct"]
+[ext_resource type="Texture2D" uid="uid://dqeqdokvwqi22" path="res://assets/Main Menu/Background/7.png" id="8_j26hr"]
+[ext_resource type="Texture2D" uid="uid://cv7eoliqwqi6g" path="res://assets/Main Menu/Background/20.png" id="9_nqp56"]
+[ext_resource type="Texture2D" uid="uid://t6wp7v1ir6yv" path="res://assets/Main Menu/Background/21.png" id="10_tmw1f"]
+[ext_resource type="Texture2D" uid="uid://bu8ky2x5r7t5m" path="res://assets/Main Menu/Background/18.png" id="11_737eb"]
+[ext_resource type="Texture2D" uid="uid://bi7fxt6j3puhp" path="res://assets/Main Menu/Background/19.png" id="12_gbdye"]
+[ext_resource type="Texture2D" uid="uid://spp5w3j2ttm1" path="res://assets/Main Menu/Background/16.png" id="13_paomq"]
+[ext_resource type="Texture2D" uid="uid://d36fsda6mo5g0" path="res://assets/Main Menu/Background/17.png" id="14_x4bnr"]
+[ext_resource type="Texture2D" uid="uid://dgi7f1yigt5ac" path="res://assets/Main Menu/Background/15.png" id="15_kxpkv"]
+[ext_resource type="Texture2D" uid="uid://wemn3rvf8i3k" path="res://assets/Main Menu/Background/14.png" id="16_wrpwk"]
+[ext_resource type="Texture2D" uid="uid://d0mef8arq8w5b" path="res://assets/Main Menu/Background/13.png" id="17_sso4h"]
+[ext_resource type="Texture2D" uid="uid://5ypmnj0jvryi" path="res://assets/Main Menu/Background/12.png" id="18_qaxuw"]
+[ext_resource type="Texture2D" uid="uid://y5f6pnd6nv56" path="res://assets/Main Menu/Background/8.png" id="19_2qgk0"]
+[ext_resource type="Texture2D" uid="uid://i5knwsgpw1dv" path="res://assets/Main Menu/Background/9.png" id="20_gd3i4"]
+[ext_resource type="Texture2D" uid="uid://hjhmlk2ft8ff" path="res://assets/Main Menu/Background/10.png" id="21_iayiu"]
+[ext_resource type="Texture2D" uid="uid://cg2xv65mxrung" path="res://assets/Main Menu/Background/11.png" id="22_hb6sf"]
+[ext_resource type="FontFile" uid="uid://f2y8mut1g5q8" path="res://assets/Volkswagen-Heavy.otf" id="24_rvvas"]
+[ext_resource type="Texture2D" uid="uid://dqy5p51q64875" path="res://assets/lock.png" id="26_1uiuy"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ns6ff"]
-texture = ExtResource("2_jq82j")
-modulate_color = Color(0.585062, 0.585062, 0.58506197, 1)
+[sub_resource type="SpriteFrames" id="SpriteFrames_2b4q2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_cy8yo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_bbj4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pbrp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_a4lpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bj1le")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5x3ct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_j26hr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_nqp56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tmw1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_737eb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_gbdye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_paomq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_x4bnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_kxpkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_wrpwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_sso4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_qaxuw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_2qgk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_gd3i4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_iayiu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_hb6sf")
+}],
+"loop": true,
+"name": &"background",
+"speed": 3.0
+}]
 
 [node name="LevelSelectMenu" type="Node2D"]
 texture_filter = 1
 script = ExtResource("1_isecu")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Background" type="AnimatedSprite2D" parent="."]
+position = Vector2(575.7778, 324.5)
+scale = Vector2(0.5990741, 0.59907407)
+sprite_frames = SubResource("SpriteFrames_2b4q2")
+animation = &"background"
+
+[node name="Label4" type="Label" parent="."]
 texture_filter = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -134.0
-offset_right = 1152.0
-offset_bottom = 771.0
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 308.0
+offset_top = 240.0
+offset_right = 427.0
+offset_bottom = 284.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_ns6ff")
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.46846738, 0.74968106, 0.60907423, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("3_5wmf4")
+theme_override_font_sizes/font_size = 24
+text = "Level 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 531.0
+offset_top = 240.0
+offset_right = 650.0
+offset_bottom = 284.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.46846738, 0.74968106, 0.60907423, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("3_5wmf4")
+theme_override_font_sizes/font_size = 24
+text = "Level 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 749.0
+offset_top = 240.0
+offset_right = 868.0
+offset_bottom = 284.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.46846738, 0.74968106, 0.60907423, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("3_5wmf4")
+theme_override_font_sizes/font_size = 24
+text = "Level 3"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label" type="Label" parent="."]
 texture_filter = 1
@@ -32,89 +180,34 @@ anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 467.0
-offset_top = 147.0
-offset_right = 735.0
-offset_bottom = 191.0
+offset_left = 427.0
+offset_top = 140.0
+offset_right = 778.0
+offset_bottom = 293.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("3_5wmf4")
-theme_override_font_sizes/font_size = 32
-text = "Level Select Menu"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label" type="Label" parent="Label"]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -293.0
-offset_top = 81.0
-offset_right = -174.0
-offset_bottom = 125.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("3_5wmf4")
-theme_override_font_sizes/font_size = 24
-text = "Level 1"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label2" type="Label" parent="Label"]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -70.0
-offset_top = 81.0
-offset_right = 49.0
-offset_bottom = 125.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("3_5wmf4")
-theme_override_font_sizes/font_size = 24
-text = "Level 2"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label3" type="Label" parent="Label"]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 148.0
-offset_top = 81.0
-offset_right = 267.0
-offset_bottom = 125.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("3_5wmf4")
-theme_override_font_sizes/font_size = 24
-text = "Level 3"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.46846738, 0.74968106, 0.60907423, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("24_rvvas")
+theme_override_font_sizes/font_size = 59
+text = "Level Select
+"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="lvl1_completed" type="ColorRect" parent="."]
 texture_filter = 1
 offset_left = 294.0
-offset_top = 287.0
+offset_top = 299.0
 offset_right = 442.0
-offset_bottom = 435.0
-color = Color(0, 0.6411751, 0.26073384, 1)
+offset_bottom = 447.0
+color = Color(0, 0.8107136, 0.47984886, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="lvl1_completed"]
-modulate = Color(0, 0, 0, 1)
+modulate = Color(0.13710788, 0.4624781, 0.42675743, 1)
 position = Vector2(74, 74)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("4_jq82j")
@@ -122,13 +215,13 @@ texture = ExtResource("4_jq82j")
 [node name="lvl2_completed" type="ColorRect" parent="."]
 texture_filter = 1
 offset_left = 514.0
-offset_top = 287.0
+offset_top = 299.0
 offset_right = 662.0
-offset_bottom = 435.0
-color = Color(0, 0.6411751, 0.26073384, 1)
+offset_bottom = 447.0
+color = Color(0, 0.8117647, 0.47843137, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="lvl2_completed"]
-modulate = Color(0, 0, 0, 1)
+modulate = Color(0.13725491, 0.4627451, 0.42745098, 1)
 position = Vector2(74, 74)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("4_jq82j")
@@ -136,13 +229,13 @@ texture = ExtResource("4_jq82j")
 [node name="lvl3_completed" type="ColorRect" parent="."]
 texture_filter = 1
 offset_left = 734.0
-offset_top = 287.0
+offset_top = 299.0
 offset_right = 882.0
-offset_bottom = 435.0
-color = Color(0, 0.6411751, 0.26073384, 1)
+offset_bottom = 447.0
+color = Color(0, 0.8117647, 0.47843137, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="lvl3_completed"]
-modulate = Color(0, 0, 0, 1)
+modulate = Color(0.13725491, 0.4627451, 0.42745098, 1)
 position = Vector2(74, 74)
 scale = Vector2(0.06, 0.06)
 texture = ExtResource("4_jq82j")
@@ -150,62 +243,62 @@ texture = ExtResource("4_jq82j")
 [node name="lvl1_locked" type="ColorRect" parent="."]
 texture_filter = 1
 offset_left = 294.0
-offset_top = 287.0
+offset_top = 299.0
 offset_right = 442.0
-offset_bottom = 435.0
-color = Color(0.9938831, 0.032714568, 1.1551381e-06, 1)
+offset_bottom = 447.0
+color = Color(0.9607843, 0, 0.20392157, 1)
 
 [node name="lvl2_locked" type="ColorRect" parent="."]
 texture_filter = 1
 offset_left = 514.0
-offset_top = 287.0
+offset_top = 299.0
 offset_right = 662.0
-offset_bottom = 435.0
-color = Color(0.99215686, 0.03137255, 0, 1)
+offset_bottom = 447.0
+color = Color(0.9607843, 0, 0.20392157, 1)
 
 [node name="lvl3_locked" type="ColorRect" parent="."]
 texture_filter = 1
 offset_left = 734.0
-offset_top = 287.0
+offset_top = 299.0
 offset_right = 882.0
-offset_bottom = 435.0
-color = Color(0.99215686, 0.03137255, 0, 1)
+offset_bottom = 447.0
+color = Color(0.9607843, 0, 0.20392157, 1)
 
 [node name="Button" type="Button" parent="."]
 unique_name_in_owner = true
 texture_filter = 1
 offset_left = 292.0
-offset_top = 285.0
+offset_top = 297.0
 offset_right = 444.0
-offset_bottom = 437.0
+offset_bottom = 449.0
 
 [node name="Button2" type="Button" parent="."]
 unique_name_in_owner = true
 texture_filter = 1
 offset_left = 512.0
-offset_top = 285.0
+offset_top = 297.0
 offset_right = 664.0
-offset_bottom = 437.0
+offset_bottom = 449.0
 
 [node name="Button3" type="Button" parent="."]
 unique_name_in_owner = true
 texture_filter = 1
 offset_left = 732.0
-offset_top = 285.0
+offset_top = 297.0
 offset_right = 884.0
-offset_bottom = 437.0
-
-[node name="Lock1" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(588, 361)
-scale = Vector2(0.19765615, 0.19765615)
-texture = ExtResource("4_or5k1")
+offset_bottom = 449.0
 
 [node name="Lock2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(808, 361)
-scale = Vector2(0.19765615, 0.19765615)
-texture = ExtResource("4_or5k1")
+position = Vector2(809, 373.00003)
+scale = Vector2(0.7168838, 0.7168838)
+texture = ExtResource("26_1uiuy")
+
+[node name="Lock1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(589, 373.00003)
+scale = Vector2(0.7168838, 0.7168838)
+texture = ExtResource("26_1uiuy")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

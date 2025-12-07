@@ -1,36 +1,142 @@
-[gd_scene load_steps=9 format=3 uid="uid://c5j30qojyimsa"]
+[gd_scene load_steps=36 format=3 uid="uid://c5j30qojyimsa"]
 
 [ext_resource type="Script" uid="uid://dy76t2twg5lls" path="res://scripts/Menu/main_menu.gd" id="1_bqqt6"]
-[ext_resource type="Texture2D" uid="uid://tt50we0pt282" path="res://assets/2159bc01642656365f703e775f0430ef.jpg" id="1_ekxnf"]
-[ext_resource type="FontFile" uid="uid://cye4lbqelomt3" path="res://assets/ROHH  Akwe Pro Black.otf" id="2_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://brsg7o0wa4gaw" path="res://assets/Main Menu/Background/1.png" id="2_1dfpl"]
+[ext_resource type="Texture2D" uid="uid://vc6pe45vqeqm" path="res://assets/Main Menu/Background/2.png" id="3_qywvv"]
+[ext_resource type="Texture2D" uid="uid://bbd1hn1o1d3sb" path="res://assets/Main Menu/Background/3.png" id="4_3wgol"]
+[ext_resource type="Texture2D" uid="uid://f21ispdk7vnh" path="res://assets/Main Menu/Background/4.png" id="5_1acrt"]
+[ext_resource type="Texture2D" uid="uid://bwiea671ntk4s" path="res://assets/Main Menu/Background/5.png" id="6_vr8o3"]
+[ext_resource type="Texture2D" uid="uid://dmybktkpm1ddy" path="res://assets/Main Menu/Background/6.png" id="7_1a85y"]
+[ext_resource type="Texture2D" uid="uid://dqeqdokvwqi22" path="res://assets/Main Menu/Background/7.png" id="8_hl5e0"]
+[ext_resource type="Texture2D" uid="uid://cv7eoliqwqi6g" path="res://assets/Main Menu/Background/20.png" id="9_engjn"]
+[ext_resource type="Texture2D" uid="uid://t6wp7v1ir6yv" path="res://assets/Main Menu/Background/21.png" id="10_6h3lr"]
+[ext_resource type="Texture2D" uid="uid://bu8ky2x5r7t5m" path="res://assets/Main Menu/Background/18.png" id="11_dj67d"]
+[ext_resource type="Texture2D" uid="uid://bi7fxt6j3puhp" path="res://assets/Main Menu/Background/19.png" id="12_6vcge"]
+[ext_resource type="Texture2D" uid="uid://spp5w3j2ttm1" path="res://assets/Main Menu/Background/16.png" id="13_ip0br"]
+[ext_resource type="Texture2D" uid="uid://d36fsda6mo5g0" path="res://assets/Main Menu/Background/17.png" id="14_xyero"]
+[ext_resource type="Texture2D" uid="uid://dgi7f1yigt5ac" path="res://assets/Main Menu/Background/15.png" id="15_tcusk"]
+[ext_resource type="Texture2D" uid="uid://wemn3rvf8i3k" path="res://assets/Main Menu/Background/14.png" id="16_4puye"]
+[ext_resource type="Texture2D" uid="uid://d0mef8arq8w5b" path="res://assets/Main Menu/Background/13.png" id="17_q13xq"]
+[ext_resource type="Texture2D" uid="uid://5ypmnj0jvryi" path="res://assets/Main Menu/Background/12.png" id="18_u43bj"]
+[ext_resource type="Texture2D" uid="uid://y5f6pnd6nv56" path="res://assets/Main Menu/Background/8.png" id="19_jvjdd"]
+[ext_resource type="Texture2D" uid="uid://i5knwsgpw1dv" path="res://assets/Main Menu/Background/9.png" id="20_yxnar"]
+[ext_resource type="Texture2D" uid="uid://hjhmlk2ft8ff" path="res://assets/Main Menu/Background/10.png" id="21_eku7s"]
+[ext_resource type="Texture2D" uid="uid://cg2xv65mxrung" path="res://assets/Main Menu/Background/11.png" id="22_c6nra"]
+[ext_resource type="Texture2D" uid="uid://mosydc8teq86" path="res://assets/Main Menu/title.png" id="23_1acrt"]
+[ext_resource type="Script" path="res://scripts/Menu/left_leaves.gd" id="24_hl5e0"]
+[ext_resource type="Texture2D" uid="uid://c51i7o6txa3da" path="res://assets/Main Menu/Leaf/leaf1.png" id="24_vr8o3"]
+[ext_resource type="Texture2D" uid="uid://cdy5fw4rl658a" path="res://assets/Main Menu/Leaf/leaf2.png" id="26_engjn"]
+[ext_resource type="FontFile" uid="uid://f2y8mut1g5q8" path="res://assets/Volkswagen-Heavy.otf" id="26_hl5e0"]
+[ext_resource type="Texture2D" uid="uid://dhxy4bht0f41l" path="res://assets/Main Menu/Leaf/leaf3.png" id="27_6h3lr"]
+[ext_resource type="Texture2D" uid="uid://dam3nwelgkvde" path="res://assets/Main Menu/Leaf/leaf4.png" id="28_dj67d"]
+[ext_resource type="Script" path="res://scripts/Menu/right_leaves.gd" id="28_engjn"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wu84c"]
-texture = ExtResource("1_ekxnf")
-modulate_color = Color(0.585062, 0.585062, 0.58506197, 1)
+[sub_resource type="SpriteFrames" id="SpriteFrames_qw82i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1dfpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qywvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3wgol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1acrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vr8o3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1a85y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_hl5e0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_engjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6h3lr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dj67d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6vcge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ip0br")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_xyero")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_tcusk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4puye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_q13xq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_u43bj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jvjdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_yxnar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_eku7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_c6nra")
+}],
+"loop": true,
+"name": &"background",
+"speed": 3.0
+}]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vue75"]
 bg_color = Color(1, 1, 1, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.47058824, 0.7529412, 0.6117647, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
-bg_color = Color(0.27387273, 0.27387273, 0.27387273, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
+bg_color = Color(0.47058824, 0.7529412, 0.6117647, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
-bg_color = Color(0.585062, 0.585062, 0.5850621, 1)
-corner_radius_top_left = 16
-corner_radius_top_right = 16
-corner_radius_bottom_right = 16
-corner_radius_bottom_left = 16
-shadow_size = 5
+bg_color = Color(0.47058824, 0.7529412, 0.6117647, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ekxnf"]
 
@@ -44,17 +150,46 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bqqt6")
 
-[node name="Panel" type="Panel" parent="."]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -134.0
-offset_bottom = 99.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_wu84c")
+[node name="Background" type="AnimatedSprite2D" parent="."]
+position = Vector2(575.7778, 324.5)
+scale = Vector2(0.5990741, 0.59907407)
+sprite_frames = SubResource("SpriteFrames_qw82i")
+animation = &"background"
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(577, 324)
+scale = Vector2(0.5981481, 0.59814817)
+texture = ExtResource("23_1acrt")
+
+[node name="LeftLeaves" type="Node2D" parent="."]
+position = Vector2(275, -27.000002)
+scale = Vector2(7.562499, 7.562499)
+script = ExtResource("24_hl5e0")
+
+[node name="Leaf1" type="Sprite2D" parent="LeftLeaves"]
+position = Vector2(-1.9073486e-06, -5.9504137)
+texture = ExtResource("24_vr8o3")
+
+[node name="Leaf3" type="Sprite2D" parent="LeftLeaves"]
+position = Vector2(0, -20.892565)
+texture = ExtResource("27_6h3lr")
+
+[node name="Leaf4" type="Sprite2D" parent="LeftLeaves"]
+position = Vector2(-8.462813, -2.9090915)
+texture = ExtResource("28_dj67d")
+
+[node name="RightLeaves" type="Node2D" parent="."]
+position = Vector2(201.00002, -27)
+scale = Vector2(7.562499, 7.562499)
+script = ExtResource("28_engjn")
+
+[node name="Leaf2" type="Sprite2D" parent="RightLeaves"]
+position = Vector2(129.85126, 49.586784)
+texture = ExtResource("26_engjn")
+
+[node name="Leaf5" type="Sprite2D" parent="RightLeaves"]
+position = Vector2(134.2149, 41.6529)
+texture = ExtResource("28_dj67d")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 texture_filter = 1
@@ -64,10 +199,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -164.0
-offset_top = -35.0
-offset_right = 164.0
-offset_bottom = 168.0
+offset_left = -130.0
+offset_top = 84.0
+offset_right = 122.0
+offset_bottom = 194.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -75,11 +210,12 @@ grow_vertical = 2
 texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.47058824, 0.7529412, 0.6117647, 1)
+theme_override_colors/font_focus_color = Color(0.47058824, 0.7529412, 0.6117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = 4
+theme_override_fonts/font = ExtResource("26_hl5e0")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ekxnf")
@@ -87,31 +223,16 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ekxnf")
 text = "Start Game"
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
-texture_filter = 1
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_constants/line_spacing = 4
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_ekxnf")
-theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_ekxnf")
-text = "Settings"
-
 [node name="Button3" type="Button" parent="VBoxContainer"]
 texture_filter = 1
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.47058824, 0.7529412, 0.6117647, 1)
+theme_override_colors/font_focus_color = Color(0.47058824, 0.7529412, 0.6117647, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_constants/line_spacing = 4
+theme_override_fonts/font = ExtResource("26_hl5e0")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_vue75")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_ekxnf")
@@ -119,29 +240,5 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ekxnf")
 text = "Exit"
 
-[node name="Label" type="Label" parent="."]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -332.0
-offset_top = -209.0
-offset_right = 332.0
-offset_bottom = -103.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 40
-theme_override_fonts/font = ExtResource("2_bqqt6")
-theme_override_font_sizes/font_size = 87
-text = "Flood Control'ed"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]

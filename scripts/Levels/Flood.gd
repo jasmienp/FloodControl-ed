@@ -18,6 +18,8 @@ func start_flood_sequence_with_delay() -> void:
 	await show_flood_with_delay(2, 1.0)
 	await show_flood_with_delay(3, 1.0)
 
+	change_to_level_select_scene()
+
 func show_flood_with_delay(index: int, delay: float) -> void:
 	for f in flood_variations:
 		f.visible = false
@@ -26,3 +28,6 @@ func show_flood_with_delay(index: int, delay: float) -> void:
 		flood_variations[index].visible = true
 
 	await get_tree().create_timer(delay).timeout
+
+func change_to_level_select_scene() -> void:
+	get_tree().change_scene_to_file("res://scenes/level_select_menu.tscn")
